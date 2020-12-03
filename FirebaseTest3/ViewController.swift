@@ -44,42 +44,47 @@ class ViewController: UIViewController {
                     print("Error: \(error as Optional)")
                         return
         }
-//        Auth.auth().signIn(with: credential) { (result, error) in
-//                        // signIn後の処理
-//                }
+        Auth.auth().signIn(with: credential) { (result, error) in
+            // signIn後の処理
+            if error != nil {
+                print("error")
+            } else {
+                self.performSegue(withIdentifier: "segue1", sender: nil)
             }
         }
+    }
+}
     
     
 
-//
-//    @IBAction func loginButton(_ sender: Any) {
-//        let name = self.nameText.text
-//        let mail = self.mailText.text
-//        let password = self.passwordText.text
-//        Auth.auth().createUser(withEmail: mail ?? "", password: password ?? "") { authResult, error in
-//            if let user = authResult?.user {
-//                let req = user.createProfileChangeRequest()
-//                req.displayName = name
-//                req.commitChanges() {[weak self] error in
-//                    guard let self = self else {return}
-//                    if error == nil {
-//                        print("OK")
-//                        self.performSegue(withIdentifier: "segue1", sender: nil)
-//                    }
-//                }
-//            }
-//
-//
-//            if error != nil {
-//                print("error")
-//                return
-//            }else {
-//                print(authResult)
-//            }
-//        }
-//
-//    }
+
+    @IBAction func loginButton(_ sender: Any) {
+        let name = self.nameText.text
+        let mail = self.mailText.text
+        let password = self.passwordText.text
+        Auth.auth().createUser(withEmail: mail ?? "", password: password ?? "") { authResult, error in
+            if let user = authResult?.user {
+                let req = user.createProfileChangeRequest()
+                req.displayName = name
+                req.commitChanges() {[weak self] error in
+                    guard let self = self else {return}
+                    if error == nil {
+                        print("OK")
+                        self.performSegue(withIdentifier: "segue1", sender: nil)
+                    }
+                }
+            }
+
+
+            if error != nil {
+                print("error")
+                return
+            }else {
+                print(authResult)
+            }
+        }
+
+    }
     
 
 }
