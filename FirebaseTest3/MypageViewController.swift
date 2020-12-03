@@ -50,8 +50,10 @@ class MypageViewController: UIViewController, UIImagePickerControllerDelegate & 
                    // ビューに表示
                    self.present(pickerView, animated: true)
                }
-        
     }
+    
+      
+    
     
 
     /*
