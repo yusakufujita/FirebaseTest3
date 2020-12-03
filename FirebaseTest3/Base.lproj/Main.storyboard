@@ -67,37 +67,22 @@
                         <outlet property="mailText" destination="5MP-SA-CwK" id="WTP-UA-0e4"/>
                         <outlet property="nameText" destination="fQY-7L-Ryz" id="rFC-vz-xZg"/>
                         <outlet property="passwordText" destination="OPq-5j-k8S" id="Bog-pb-hSA"/>
-                        <segue destination="QKa-N2-A93" kind="show" identifier="segue1" id="lnh-CD-u5J"/>
+                        <segue destination="nDC-OP-3Dc" kind="show" identifier="segue1" id="qXj-bY-jiK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="I2c-vN-sXb">
+        <!--Mypage-->
+        <scene sceneID="5km-Xt-vL3">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="QKa-N2-A93" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1Eb-hp-t8N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ログイン成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHT-UV-JDU">
-                                <rect key="frame" x="51" y="223" width="310" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Y0m-ZQ-C0m"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="UyL-ha-noK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5V8-uw-Eda" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Mypage" id="nDC-OP-3Dc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Uu-yo-6CF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n3u-ml-YUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708.69565217391312" y="81.696428571428569"/>
+            <point key="canvasLocation" x="687" y="38"/>
         </scene>
     </scenes>
     <resources>
