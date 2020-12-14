@@ -19,6 +19,20 @@
 		22344A8225779C23009C769C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22344A8125779C23009C769C /* GoogleService-Info.plist */; };
 		22344AD32577A28B009C769C /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22344AD22577A28B009C769C /* Mypage.storyboard */; };
 		22344AD82577A2A5009C769C /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22344AD72577A2A5009C769C /* MypageViewController.swift */; };
+		226380FE257E591A0053E908 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226380FD257E591A0053E908 /* MessageUI.framework */; };
+		22638131257F7C5B0053E908 /* TimeLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22638130257F7C5B0053E908 /* TimeLine.storyboard */; };
+		22638136257F7C6A0053E908 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22638135257F7C6A0053E908 /* TimeLineViewController.swift */; };
+		22638151257FD79F0053E908 /* Simple1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22638150257FD79F0053E908 /* Simple1ViewController.swift */; };
+		22638156257FD8730053E908 /* AnimatedTabOptionsImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22638155257FD8730053E908 /* AnimatedTabOptionsImplementation.swift */; };
+		2263816A25806C7C0053E908 /* Simple2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263816925806C7C0053E908 /* Simple2ViewController.swift */; };
+		22638185258134800053E908 /* Simple3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22638184258134800053E908 /* Simple3ViewController.swift */; };
+		226381A6258135CA0053E908 /* Simple4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226381A5258135CA0053E908 /* Simple4ViewController.swift */; };
+		22DD230F2584D5D300D23032 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD230E2584D5D300D23032 /* LoginViewController.swift */; };
+		22DD23142584D5E200D23032 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD23132584D5E200D23032 /* HomeViewController.swift */; };
+		22DD23192584D5FF00D23032 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD23182584D5FF00D23032 /* ImageSelectViewController.swift */; };
+		22DD231E2584D61000D23032 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD231D2584D61000D23032 /* PostViewController.swift */; };
+		22DD23232584D62000D23032 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD23222584D62000D23032 /* SettingViewController.swift */; };
+		22DD23402584D9FF00D23032 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD233F2584D9FF00D23032 /* MainViewController.swift */; };
 		3871F2F9623F4AF736296786 /* Pods_FirebaseTest3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F26F262D9A0CA1B15BD9C5 /* Pods_FirebaseTest3Tests.framework */; };
 		E541C1C0F7F69CA80D722ABF /* Pods_FirebaseTest3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297D8CD64ED2149688B35790 /* Pods_FirebaseTest3.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +74,21 @@
 		22344A8125779C23009C769C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22344AD22577A28B009C769C /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
 		22344AD72577A2A5009C769C /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		226380FD257E591A0053E908 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		22638102257E5C4C0053E908 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		22638130257F7C5B0053E908 /* TimeLine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeLine.storyboard; sourceTree = "<group>"; };
+		22638135257F7C6A0053E908 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		22638150257FD79F0053E908 /* Simple1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple1ViewController.swift; sourceTree = "<group>"; };
+		22638155257FD8730053E908 /* AnimatedTabOptionsImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTabOptionsImplementation.swift; sourceTree = "<group>"; };
+		2263816925806C7C0053E908 /* Simple2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple2ViewController.swift; sourceTree = "<group>"; };
+		22638184258134800053E908 /* Simple3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple3ViewController.swift; sourceTree = "<group>"; };
+		226381A5258135CA0053E908 /* Simple4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple4ViewController.swift; sourceTree = "<group>"; };
+		22DD230E2584D5D300D23032 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		22DD23132584D5E200D23032 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		22DD23182584D5FF00D23032 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		22DD231D2584D61000D23032 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		22DD23222584D62000D23032 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		22DD233F2584D9FF00D23032 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		297D8CD64ED2149688B35790 /* Pods_FirebaseTest3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseTest3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C49833093869A0BA7DFB678 /* Pods-FirebaseTest3-FirebaseTest3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest3-FirebaseTest3UITests.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTest3-FirebaseTest3UITests/Pods-FirebaseTest3-FirebaseTest3UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DE378B7D7FD8EEE60C3FFF0 /* Pods-FirebaseTest3-FirebaseTest3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTest3-FirebaseTest3UITests.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTest3-FirebaseTest3UITests/Pods-FirebaseTest3-FirebaseTest3UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226380FE257E591A0053E908 /* MessageUI.framework in Frameworks */,
 				E541C1C0F7F69CA80D722ABF /* Pods_FirebaseTest3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +175,14 @@
 				22344A5125777036009C769C /* LaunchScreen.storyboard */,
 				22344A8125779C23009C769C /* GoogleService-Info.plist */,
 				22344A5425777036009C769C /* Info.plist */,
+				22DD233E2584D92700D23032 /* Instgram */,
+				22638155257FD8730053E908 /* AnimatedTabOptionsImplementation.swift */,
+				22638130257F7C5B0053E908 /* TimeLine.storyboard */,
+				22638135257F7C6A0053E908 /* TimeLineViewController.swift */,
+				22638150257FD79F0053E908 /* Simple1ViewController.swift */,
+				2263816925806C7C0053E908 /* Simple2ViewController.swift */,
+				22638184258134800053E908 /* Simple3ViewController.swift */,
+				226381A5258135CA0053E908 /* Simple4ViewController.swift */,
 			);
 			path = FirebaseTest3;
 			sourceTree = "<group>";
@@ -167,9 +205,24 @@
 			path = FirebaseTest3UITests;
 			sourceTree = "<group>";
 		};
+		22DD233E2584D92700D23032 /* Instgram */ = {
+			isa = PBXGroup;
+			children = (
+				22DD230E2584D5D300D23032 /* LoginViewController.swift */,
+				22DD23132584D5E200D23032 /* HomeViewController.swift */,
+				22DD23182584D5FF00D23032 /* ImageSelectViewController.swift */,
+				22DD231D2584D61000D23032 /* PostViewController.swift */,
+				22DD23222584D62000D23032 /* SettingViewController.swift */,
+				22DD233F2584D9FF00D23032 /* MainViewController.swift */,
+			);
+			path = Instgram;
+			sourceTree = "<group>";
+		};
 		679C5BD424C1E514F34E4E01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22638102257E5C4C0053E908 /* Messages.framework */,
+				226380FD257E591A0053E908 /* MessageUI.framework */,
 				297D8CD64ED2149688B35790 /* Pods_FirebaseTest3.framework */,
 				9076FEC7B3D455E1F6F9D52E /* Pods_FirebaseTest3_FirebaseTest3UITests.framework */,
 				E9F26F262D9A0CA1B15BD9C5 /* Pods_FirebaseTest3Tests.framework */,
@@ -290,6 +343,7 @@
 				22344A5325777036009C769C /* LaunchScreen.storyboard in Resources */,
 				22344A5025777036009C769C /* Assets.xcassets in Resources */,
 				22344AD32577A28B009C769C /* Mypage.storyboard in Resources */,
+				22638131257F7C5B0053E908 /* TimeLine.storyboard in Resources */,
 				22344A4E25777034009C769C /* Main.storyboard in Resources */,
 				22344A8225779C23009C769C /* GoogleService-Info.plist in Resources */,
 			);
@@ -454,9 +508,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				22344A4B25777034009C769C /* ViewController.swift in Sources */,
+				2263816A25806C7C0053E908 /* Simple2ViewController.swift in Sources */,
+				22DD231E2584D61000D23032 /* PostViewController.swift in Sources */,
 				22344A4725777034009C769C /* AppDelegate.swift in Sources */,
+				226381A6258135CA0053E908 /* Simple4ViewController.swift in Sources */,
+				22DD23232584D62000D23032 /* SettingViewController.swift in Sources */,
+				22638151257FD79F0053E908 /* Simple1ViewController.swift in Sources */,
+				22DD23402584D9FF00D23032 /* MainViewController.swift in Sources */,
 				22344A4925777034009C769C /* SceneDelegate.swift in Sources */,
+				22DD23192584D5FF00D23032 /* ImageSelectViewController.swift in Sources */,
+				22638136257F7C6A0053E908 /* TimeLineViewController.swift in Sources */,
 				22344AD82577A2A5009C769C /* MypageViewController.swift in Sources */,
+				22638156257FD8730053E908 /* AnimatedTabOptionsImplementation.swift in Sources */,
+				22638185258134800053E908 /* Simple3ViewController.swift in Sources */,
+				22DD230F2584D5D300D23032 /* LoginViewController.swift in Sources */,
+				22DD23142584D5E200D23032 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +702,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 728MNT2Y45;
 				INFOPLIST_FILE = FirebaseTest3/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,7 +723,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 728MNT2Y45;
 				INFOPLIST_FILE = FirebaseTest3/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

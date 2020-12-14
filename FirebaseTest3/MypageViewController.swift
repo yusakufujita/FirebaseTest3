@@ -7,13 +7,18 @@
 
 import UIKit
 import Firebase
+import MessageUI
 
-class MypageViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+
+class MypageViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate,MFMailComposeViewControllerDelegate {
 
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mailLabel: UILabel!
     @IBOutlet weak var ProfileImage: UIImageView!
+    @IBOutlet weak var contactButton: UIButton!
+    
+    var userName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +28,43 @@ class MypageViewController: UIViewController, UIImagePickerControllerDelegate & 
         }else {
             print("エラー")
         }
+        self.contactButton.layer.cornerRadius = 50.0
+        nameLabel.text = userName
         // Do any additional setup after loading the view.
     }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func sendMail(_ sender: Any) {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["2020sukil@gmail.com"]) // 宛先アドレス
+            mail.setSubject("RamenInfoお問い合わせ") // 件名
+            mail.setMessageBody("お問い合わせ内容：", isHTML: false) // 本文
+            present(mail, animated: true, completion: nil)
+        } else {
+            print("送信できません")
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+          switch result {
+          case .cancelled:
+              print("キャンセル")
+          case .saved:
+              print("下書き保存")
+          case .sent:
+              print("送信成功")
+          default:
+              print("送信失敗")
+          }
+          dismiss(animated: true, completion: nil)
+      }
+    
     
     // 写真を選んだ後に呼ばれる処理
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

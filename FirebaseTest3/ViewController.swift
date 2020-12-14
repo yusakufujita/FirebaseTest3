@@ -9,6 +9,8 @@ import UIKit
 import Firebase
 import TwitterKit
 import FirebaseAuth
+import MessageUI
+
 
 class ViewController: UIViewController {
     
@@ -17,12 +19,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var mailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
 
-    var provider: OAuthProvider?
-
+//    var twitterProvider : OAuthProvider?
+    
+    var provider:OAuthProvider?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        self.twitterProvider = OAuthProvider(providerID:"twitter.com");
+        self.provider = OAuthProvider(providerID: TwitterAuthProviderID)
     }
+    
+    //再びログインされるのを防ぐ機能を作る
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -30,30 +40,55 @@ class ViewController: UIViewController {
     
     
     @IBAction func twiiterLogin(_ sender: Any) {
-        print("buttonDidPush")
+        
         self.provider = OAuthProvider(providerID: TwitterAuthProviderID)
-
-        guard let provider = self.provider else { return }
-
-        provider.customParameters = [
-                    "force_login": "true",
-        ]
-
-        provider.getCredentialWith(nil) { credential, error in
-        guard let credential = credential, error == nil else {
-                    print("Error: \(error as Optional)")
-                        return
-        }
-        Auth.auth().signIn(with: credential) { (result, error) in
-            // signIn後の処理
-            if error != nil {
-                print("error")
-            } else {
+        provider?.customParameters = ["force_login":"true"]
+        provider?.getCredentialWith(nil, completion: {(credential, error) in
+//            ログインの処理
+            Auth.auth().signIn(with: credential!) { (result, error) in
+                if error != nil {
+                    print("エラー")
+                    return
+                }
+                
+                if result != nil {
+                    print("失敗")
+                }
+                
+                //画面遷移
+                let viewVC = self.storyboard?.instantiateViewController(identifier: "viewVC") as! MypageViewController
+                viewVC.userName = (result?.displayName)!
+                self.navigationController?.pushViewController(viewVC, animated: true)
                 self.performSegue(withIdentifier: "segue1", sender: nil)
+
             }
-        }
+        })
+        
+//        self.twitterProvider?.getCredentialWith(_: nil){ (credential, error) in
+//                    if error != nil {
+//                        // Handle error.
+//                        print("エラー")
+//                    }
+//                    if let credential = credential {
+//                        Auth.auth().signIn(with: credential) { (authResult, error) in
+//                            if error != nil {
+//                                // Handle error.
+//                                print("エラー")
+//                            }
+//                            // User is signed in.
+//                            // IdP data available in authResult.additionalUserInfo.profile.
+//                            // Twitter OAuth access token can also be retrieved by:
+//                            // authResult.credential.accessToken
+//                            // Twitter OAuth ID token can be retrieved by calling:
+//                            // authResult.credential.idToken
+//                            // Twitter OAuth secret can be retrieved by calling:
+//                            // authResult.credential.secret
+//                            self.performSegue(withIdentifier: "segue1", sender: nil)
+//
+//                        }
+//                    }
+//                }
     }
-}
     
     
 
