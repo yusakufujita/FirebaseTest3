@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 //        self.twitterProvider = OAuthProvider(providerID:"twitter.com");
         self.provider = OAuthProvider(providerID: TwitterAuthProviderID)
+        provider?.customParameters = ["lang":"ja"]
     }
     
     //再びログインされるのを防ぐ機能を作る
