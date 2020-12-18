@@ -110,8 +110,6 @@ class ViewController: UIViewController {
                     }
                 }
             }
-
-
             if error != nil {
                 print("error")
                 return

@@ -13,24 +13,25 @@ import MessageUI
 class MypageViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate,MFMailComposeViewControllerDelegate {
 
     
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mailLabel: UILabel!
     @IBOutlet weak var ProfileImage: UIImageView!
     @IBOutlet weak var contactButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     
     var userName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let user = Auth.auth().currentUser {
-            self.nameLabel.text = user.displayName
+            self.nameLabel.text = user.displayName!
             self.mailLabel.text = user.email
+            print(self.nameLabel.text)
+            print(self.mailLabel.text)
         }else {
             print("エラー")
         }
         self.contactButton.layer.cornerRadius = 50.0
-        nameLabel.text = userName
-        // Do any additional setup after loading the view.
+//        // Do any additional setup after loading the view.
     }
     
     
