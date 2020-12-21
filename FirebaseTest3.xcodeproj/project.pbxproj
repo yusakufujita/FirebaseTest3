@@ -27,8 +27,6 @@
 		2263816A25806C7C0053E908 /* Simple2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263816925806C7C0053E908 /* Simple2ViewController.swift */; };
 		22638185258134800053E908 /* Simple3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22638184258134800053E908 /* Simple3ViewController.swift */; };
 		226381A6258135CA0053E908 /* Simple4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226381A5258135CA0053E908 /* Simple4ViewController.swift */; };
-		22B643B7258D2F8F00FAD4A8 /* PLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B643B6258D2F8F00FAD4A8 /* PLogin.storyboard */; };
-		22B643BC258D2FA300FAD4A8 /* PLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B643BB258D2FA300FAD4A8 /* PLogin.swift */; };
 		22B643C7258DD15D00FAD4A8 /* PLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B643C6258DD15D00FAD4A8 /* PLogin.storyboard */; };
 		22B643CC258DD16500FAD4A8 /* PLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B643CB258DD16500FAD4A8 /* PLogin.swift */; };
 		22B643D1258DD17600FAD4A8 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B643D0258DD17600FAD4A8 /* NextViewController.swift */; };
@@ -90,8 +88,6 @@
 		2263816925806C7C0053E908 /* Simple2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple2ViewController.swift; sourceTree = "<group>"; };
 		22638184258134800053E908 /* Simple3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple3ViewController.swift; sourceTree = "<group>"; };
 		226381A5258135CA0053E908 /* Simple4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple4ViewController.swift; sourceTree = "<group>"; };
-		22B643B6258D2F8F00FAD4A8 /* PLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PLogin.storyboard; sourceTree = "<group>"; };
-		22B643BB258D2FA300FAD4A8 /* PLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLogin.swift; sourceTree = "<group>"; };
 		22B643C6258DD15D00FAD4A8 /* PLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PLogin.storyboard; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/My app/FirebaseTest3/FirebaseTest3/PLogin.storyboard"; sourceTree = "<group>"; };
 		22B643CB258DD16500FAD4A8 /* PLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PLogin.swift; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/My app/FirebaseTest3/FirebaseTest3/PLogin.swift"; sourceTree = "<group>"; };
 		22B643D0258DD17600FAD4A8 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
@@ -191,8 +187,6 @@
 				22344A8125779C23009C769C /* GoogleService-Info.plist */,
 				22344A5425777036009C769C /* Info.plist */,
 				22638155257FD8730053E908 /* AnimatedTabOptionsImplementation.swift */,
-				22B643B6258D2F8F00FAD4A8 /* PLogin.storyboard */,
-				22B643BB258D2FA300FAD4A8 /* PLogin.swift */,
 				22B643C6258DD15D00FAD4A8 /* PLogin.storyboard */,
 				22B643CB258DD16500FAD4A8 /* PLogin.swift */,
 				22B643D0258DD17600FAD4A8 /* NextViewController.swift */,
@@ -366,7 +360,6 @@
 				22344A5025777036009C769C /* Assets.xcassets in Resources */,
 				22344AD32577A28B009C769C /* Mypage.storyboard in Resources */,
 				22638131257F7C5B0053E908 /* TimeLine.storyboard in Resources */,
-				22B643B7258D2F8F00FAD4A8 /* PLogin.storyboard in Resources */,
 				22344A4E25777034009C769C /* Main.storyboard in Resources */,
 				22344A8225779C23009C769C /* GoogleService-Info.plist in Resources */,
 			);
@@ -531,7 +524,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B643DB258DD18700FAD4A8 /* Scroll2ViewController.swift in Sources */,
-				22B643BC258D2FA300FAD4A8 /* PLogin.swift in Sources */,
 				22344A4B25777034009C769C /* ViewController.swift in Sources */,
 				2263816A25806C7C0053E908 /* Simple2ViewController.swift in Sources */,
 				22DD231E2584D61000D23032 /* PostViewController.swift in Sources */,
